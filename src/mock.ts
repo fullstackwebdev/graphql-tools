@@ -289,7 +289,7 @@ function addMockFunctionsToSchema({
               );
               return copyOwnProps(emptyObject, resolvedValue, mockedValue);
             }
-            return undefined !== resolvedValue ? resolvedValue : mockedValue;
+            return resolvedValue; //undefined !== resolvedValue ? resolvedValue : mockedValue;
           });
       }
     },
